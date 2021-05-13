@@ -1,0 +1,423 @@
+// landing-page
+.landing-hero {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1487621167305-5d248087c724?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=700&fit=crop&ixid=eyJhcHBfaWQiOjF9);
+    border-bottom: 1px solid #ddd;
+}
+
+.landing-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darken($blue, 25);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.landing-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;;
+    position: relative;
+    padding: 60px 30px 0;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    @media(min-width: 768px) { min-height: 100vh; }
+}
+
+.landing-hero-title {
+    font-size: 26px;
+    @media(max-width: 480px) { font-size: 20px; }
+}
+
+.landing-hero-description { font-size: 15px; }
+
+.landing-hero-banner {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.features {
+    padding: 60px 30px;
+}
+
+.features-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-cards {
+    max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.features-card {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.143em;
+    text-align: center;
+}
+
+.feature-icon-backdrop {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 8px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    stroke: #fff;
+    fill: transparent;
+}
+
+.landing-footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+// docs
+.docs {
+    font-size: 16px;
+}
+
+.docs-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    &:not(:first-of-type) { margin-top: 30px; }
+}
+
+// login-material
+// Page: Login Material
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .logo {
+        margin-bottom: 40px;
+        font-family: "Niconne";
+        color: #fff;
+
+        h1 {
+            font-size: 52px;
+            font-weight: 400;
+        }
+    }
+
+    .login-box {
+        position: relative;
+        min-width: 350px;
+        min-height: 390px;
+        background-color: #fff;
+        box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+        perspective: 800px;
+        transition: all 0.5s ease-in-out;
+
+        .login-head {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        label {
+            color: #666;
+            font-weight: 700;
+        }
+
+        .utility {
+            display: flex;
+            padding: 1px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-container { margin-bottom: 0; }
+
+        .login-form, .forget-form {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .forget-form {
+            opacity: 0;
+            transform: rotateY(180deg);
+        }
+
+        &.flipped {
+            min-height: 300px;
+
+            .login-form {
+                opacity: 0;
+                transform: rotateY(-180deg);
+            }
+
+            .forget-form {
+                opacity: 1;
+                transform: rotateY(0deg);
+            }
+        }
+    }
+}
+
+@media (max-width: 351px) {
+    .login-content {
+        .login-box {
+            min-width: 100%;
+
+            .login-form, .forget-form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// lockscreen-material
+// Page: Login Material
+
+.lockscreen-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .logo {
+        font-family: "Niconne";
+        margin-bottom: 40px;
+        color: #fff;
+
+        h1 {
+            font-size: 52px;
+            font-weight: 400;
+        }
+    }
+
+    .lock-box {
+        position: relative;
+        min-width: 320px;
+        padding: 20px 40px;
+        background-color: #fff;
+        box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+        perspective: 800px;
+        transition: all 0.5s ease-in-out;
+
+        .user-image {
+            border: 3px solid #fff;
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .user-name { margin-bottom: 2px; }
+
+        label {
+            color: #666;
+            font-weight: 700;
+        }
+    }
+}
+
+// error-page
+// Page: Error
+
+.page-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 110px);
+    margin-bottom: 0;
+    h1 {
+        margin: 10px;
+        color: theme-color("danger");
+        font-size: 42px;
+    }
+}
+
+// mailbox
+// Page: Mailbox
+
+.folder-head {
+    padding: 10px;
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.mailbox-controls {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .animated-checkbox {
+        .label-text:before { vertical-align: (-7px) !important; }
+    }
+}
+
+.mail-nav > li > a {
+    display: block;
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.mailbox-messages {
+    table tr td {
+        border: 0;
+        padding: 5px;
+    }
+
+    .mail-subject {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 500px;
+    }
+}
+
+// user-profile
+// Page: User Profile
+
+.user {
+    .profile {
+        margin: -30px -30px 0 -30px;
+        display: flex;
+
+        .info {
+            padding: 30px 60px;
+            text-align: center;
+            background-color: #fff;
+            white-space: nowrap;
+            background-color: #404040;
+            color: #fff;
+
+            img {
+                border-radius: 50%;
+                max-width: 110px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        .cover-image {
+            flex: 1;
+            background-image: url(http://placeimg.com/1200/300/nature);
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+    }
+
+    .user-tabs {
+        margin-top: 20px;
+
+        .nav-link {
+            border-left: 3px solid transparent;
+            padding: 12px 15px;
+            border-bottom: 0;
+            font-size: 15px;
+            border-radius: 0;
+
+            &.active {
+                border-left-color: $blue;
+                border-bottom: 0;
+            }
+
+            &:hover,
+            &:active {
+                background-color: #eee !important;
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .tab-content { margin: 20px -10px -10px; }
+
+    .timeline-post {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+        .post-media {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+
+            img { margin-right: 10px; }
+
+            h5 {
+                margin-top: 0;
+                margin-bottom: 3px;
+                font-size: 15px;
+            }
+        }
+
+        .post-content { margin-bottom: 20px; }
+
+        .post-utility {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            .likes,
+            .shares {
+                margin-right: 10px;
+
+                a { color: #555; }
+            }
+
+            .comments {
+                color: #555;
+                flex: 1;
+                text-align: right;
+            }
+        }
+    }
+
+    .user-settings {
+        .line-head {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #2a2a2a;
+        }
+
+        label { color: #666; }
+    }
+}

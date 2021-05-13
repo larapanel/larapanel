@@ -1,0 +1,95 @@
+// Fonts
+@import './fonts/awesome/awesome-font.css';
+@import './fonts/iransans/iransans-font.css';
+// Common bootstrap variables
+@import './variables';
+// Bootstrap rtl
+@import '~bootstrap/scss/bootstrap';
+// All plugins: alertify, select2, ...
+@import "../../../resources/sass/app";
+
+// This files are essential for the theme
+//@import './core/customize-bootstrap';
+
+// BASICS
+// This styles are essential for theme
+@import './core/content';
+
+// Component
+@import './core/components';
+
+// Plugins
+@import '~select2/dist/css/select2.css';
+@import '~select2-bootstrap-theme/dist/select2-bootstrap.css';
+
+@import "~alertifyjs/build/css/alertify.rtl.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.rtl.min.css";
+
+@import '~sweetalert2/src/sweetalert2.scss';
+
+@import '~croppie/croppie.css';
+
+@import "~md.bootstrappersiandatetimepicker/src/jquery.md.bootstrap.datetimepicker.style.css";
+
+// Pages
+// This styles are optional based on your preferance
+@import './core/pages';
+
+// Table style color border
+table.table-bordered{
+    thead{
+        tr{
+            th{
+                background-color: #dcdcdc;
+                border:1px solid #f1f2f3;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                border:1px solid #f1f2f3;
+            }
+        }
+    }
+}
+
+/* Collapse between + , - in header card */
+/*#accordion {
+    .accordion-head {
+        .collapsed {
+            i {
+                &:before{
+                    content: "\f067";
+                }
+            }
+        }
+    }
+}*/
+
+/* Change icon up/down when collapse search */
+#search-collapse.accordion {
+    .card-header {
+        &:before {
+            /* Down symbol*/
+            font-family: 'FontAwesome';
+            content: "\f0d7";
+            float: left;
+        }
+        &.collapsed {
+            &:before {
+                /* Up symbol */
+                content: "\f0d8";
+            }
+        }
+    }
+}
+
+// Cursor pointer class
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.breadcrumb-item {
+    display: flex;
+}

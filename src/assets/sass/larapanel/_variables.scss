@@ -1,0 +1,89 @@
+// Body
+$body-bg: #f8fafc;
+
+$main-color: #020230;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #020230;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #eb566c;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+//$primary: #632d11;
+//$primary: #c65b1c;
+//$primary: #ce4f04;
+//$primary: #e65600;
+//$primary: #BE5846;
+//$primary: #9E6B4D;
+//$primary: #3A1000;
+//$primary: #9d3b03;
+//$primary: #bd4602;
+$primary: #020230;
+//$primary: #e45300;
+//$primary: #fd623b;
+
+//$warning: #ffed4b;
+//$warning: #ffe54a;
+$warning: #ffe024;
+//$warning: #e2a750;
+$light-gray: #f5f3ec;
+$dark: #1b1e21;
+/*$theme-orange: #f9b000;*/
+
+$theme-colors: (
+    light-gray : $light-gray,
+);
+
+//
+// Panel Side Application Variables
+
+// Complementry color is used to indecate the loading bar on the top
+// of the page with pace.js plugin
+$complementry-color: adjust_hue($blue, 180);
+
+// ------- Sidebar Width --------
+$sidebar-width: 230px;
+
+// ------- Sidebar Colors --------
+
+// Background color of sidebar
+//$sidebar-color: rgba(116, 117, 118, 0.87);
+$sidebar-color: #747576;
+
+// -- Suggested sidebar background colors
+// dark  : #222d32
+// light : #f8f8f8
+
+// Sidebar accent varible is used to determine the color of the links
+// of the sidebar. The allowed values are 'light' or 'dark' only
+$sidebar-accent: light;
+
+// The following varibles indecate sidebar link color
+// and link hover color when using a dark sidebar color
+$sidebar-dark-color: #fff;
+$sidebar-dark-link-color: #fff;
+
+// The following varibles indecate sidebar link color
+// and link hover color when using a light sidebar color
+//$sidebar-light-color: #000;
+//$sidebar-light-link-color: #333;
+
+
+//
+$sidebar-light-color: #fff;
+$sidebar-light-link-color: #fff;
+
+$sidebar-bg: #3c3f42;
+$sidebar-hover-bg: #e1e2e3;
+$edit-color : #595e63;
