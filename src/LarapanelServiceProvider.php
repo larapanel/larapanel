@@ -32,7 +32,8 @@ class LarapanelServiceProvider extends ServiceProvider
          $this->publishes([
              __DIR__.'/config/larapanel.php' =>config_path('larapanel.php'),
              __DIR__.'/views/' => resource_path('views/vendor/larapanel'),
-             __DIR__.'/assets/' => resource_path('js/vendor/larapanel')
+             __DIR__.'/assets/js/larapanel/' => resource_path('js/vendor/larapanel'),
+             __DIR__.'/assets/sass/larapanel/' => resource_path('sass/vendor/larapanel')
          ], 'larapanel');
          $this->loadViewComponentsAs('', [
              AclMenu::class
