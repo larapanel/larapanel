@@ -39,8 +39,7 @@ class LarapanelServiceProvider extends ServiceProvider
              __DIR__.'/assets/js/larapanel/' => resource_path('js/vendor/larapanel'),
              __DIR__.'/assets/js/plugins/tinymce/' => resource_path('js/vendor/larapanel/plugins/tinymce'),
              __DIR__.'/assets/sass/larapanel/' => resource_path('sass/vendor/larapanel'),
-             __DIR__.'/assets/fonts/awesome/' => resource_path('fonts'),
-             __DIR__.'/assets/fonts/iransans/' => resource_path('fonts')
+             __DIR__.'/assets/fonts/' => resource_path('fonts')
          ], 'larapanel');
          $this->loadViewComponentsAs('', [
              AclMenu::class
