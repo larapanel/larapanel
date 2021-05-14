@@ -19,7 +19,7 @@ php artisan vendor:publish --tag=larapanel
 
 // for update :
 
-
+php artisan vendor:publish --tag=larapanel --force
 
 ```
 
