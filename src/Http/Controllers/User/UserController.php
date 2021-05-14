@@ -13,7 +13,7 @@ class UserController extends Controller
     public function create()
     {
         $provinces = Province::all();
-        return view('larapanel::users.create', compact('provinces'));
+        return view('vendor.larapanel.users.create', compact('provinces'));
     }
 
     public function store(UserRequest $request , User $user)
@@ -28,7 +28,7 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $provinces = Province::all();
-        return view('larapanel::users.edit', compact('user' , 'provinces'));
+        return view('vendor.larapanel.users.edit', compact('user' , 'provinces'));
     }
 
     public function update(UserRequest $request, User $user)

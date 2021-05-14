@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'نقش‌ها'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'نقش‌ها'])
 
     @slot('style')
     @endslot
@@ -16,11 +16,11 @@
     @slot('content')
         <div class="row">
             <div class="col-md-12">
-                @component('larapanel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('larapanel::components.collapse-card' , ['id' => 'role_index', 'show' => 'show', 'title' => 'لیست نقش‌ها'])
+                        @component('vendor.larapanel.components.collapse-card' , ['id' => 'role_index', 'show' => 'show', 'title' => 'لیست نقش‌ها'])
                             @slot('body')
-                                @component('larapanel::components.collapse-search')
+                                @component('vendor.larapanel.components.collapse-search')
                                     @slot('form')
                                         <form class="clearfix">
                                             <div class="form-group">
@@ -36,7 +36,7 @@
                                     <a href={{ route('roles.create') }} type="button" class="btn btn-primary"><i class="fa fa-plus"></i> ایجاد نقش</a>
                                 </div>
 
-                                @component('larapanel::components.table')
+                                @component('vendor.larapanel.components.table')
                                     @slot('thead')
                                         <tr>
                                             <th>شناسه</th>

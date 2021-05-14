@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'ایجاد کاربر'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'ایجاد کاربر'])
 
     @slot('style')
     @endslot
@@ -20,9 +20,9 @@
     @slot('content')
         <div class="row">
             <div class="col-md-12">
-                @component('larapanel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('larapanel::components.collapse-card', ['id' => 'user_create', 'show' => 'show', 'title' => 'ایجاد کاربر جدید'])
+                        @component('vendor.larapanel.components.collapse-card', ['id' => 'user_create', 'show' => 'show', 'title' => 'ایجاد کاربر جدید'])
                             @slot('body')
                                 <form method="POST"
                                       action="{{ route('users.store') }}" autocomplete="off">

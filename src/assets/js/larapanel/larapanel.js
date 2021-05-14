@@ -1,4 +1,4 @@
-require('../../../../../../resources/js/app');
+require('../../app');
 
 // Load sweetAlert
 window.Swal = require('sweetalert2');

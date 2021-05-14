@@ -19,14 +19,14 @@ class PermissionsController
 
     public function index()
     {
-        return View::make('larapanel::authorization.permissions.index', [
+        return View::make('vendor.larapanel.authorization.permissions.index', [
             'permissions' => $this->permissionModel::simplePaginate(10),
         ]);
     }
 
     public function create()
     {
-        return View::make('lazy-panel::authorization.edit', [
+        return View::make('vendor.larapanel.authorization.edit', [
             'model' => null,
             'type' => 'permission',
         ]);
@@ -52,7 +52,7 @@ class PermissionsController
     {
         $permission = $this->permissionModel::findOrFail($id);
 
-        return View::make('lazy-panel::authorization.edit', [
+        return View::make('vendor.larapanel.authorization.edit', [
             'model' => $permission,
             'type' => 'permission',
         ]);

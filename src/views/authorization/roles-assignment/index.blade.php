@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'کاربران'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'کاربران'])
 
     @slot('style')
     @endslot
@@ -15,11 +15,11 @@
     @slot('content')
         <div class="row">
             <div class="col-md-12">
-                @component('larapanel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('larapanel::components.collapse-card', ['id' => 'role_assignment_index', 'show' => 'show', 'title' => 'لیست کاربران'])
+                        @component('vendor.larapanel.components.collapse-card', ['id' => 'role_assignment_index', 'show' => 'show', 'title' => 'لیست کاربران'])
                             @slot('body')
-                                @component('larapanel::components.collapse-search')
+                                @component('vendor.larapanel.components.collapse-search')
                                     @slot('form')
                                         <form class="clearfix">
                                             <div class="form-group">
@@ -35,7 +35,7 @@
                                     <a href={{ route('users.create') }} type="button" class="btn btn-primary"><i class="fa fa-plus"></i> ایجاد کاربر</a>
                                 </div>
 
-                                @component('larapanel::components.table')
+                                @component('vendor.larapanel.components.table')
                                     @slot('thead')
                                         <tr>
                                             <th>شناسه</th>

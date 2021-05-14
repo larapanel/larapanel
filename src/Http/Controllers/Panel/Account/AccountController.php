@@ -20,7 +20,7 @@ class AccountController extends Controller
         } else {
             $imageUrl = null;
         }
-        return view('larapanel::panel.account.edit', compact('account','imageUrl'));
+        return view('vendor.larapanel.panel.account.edit', compact('account','imageUrl'));
     }
 
     public function update(Request $request, User $account)

@@ -15,16 +15,8 @@
             </a>
         </li>
 
-        <!--
-        <x-module-menu type="modules"></x-module-menu>
-        -->
-
         @if(auth()->user()->is_admin && auth()->user()->hasRole(['programmer']))
             <x-acl-menu></x-acl-menu>
-        @endif
-
-        @if(auth()->user()->is_admin && auth()->user()->hasRole(['programmer']))
-            <x-module-menu type="manager"></x-module-menu>
         @endif
 
     </ul>

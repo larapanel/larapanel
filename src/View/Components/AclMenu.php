@@ -20,6 +20,6 @@ class AclMenu extends Component
 
     public function render()
     {
-        return view('larapanel::components.acl.acl_menu');
+        return view('vendor.larapanel.components.acl.acl_menu');
     }
 }

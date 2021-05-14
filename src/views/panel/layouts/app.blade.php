@@ -24,9 +24,9 @@
 </head>
 <body class="app sidebar-mini" style="overflow-y: scroll;">
     <div id="app">
-        @component('larapanel::panel.layouts.navbar')
+        @component('vendor.larapanel.panel.layouts.navbar')
         @endcomponent
-        @component('larapanel::panel.layouts.sidebar')
+        @component('vendor.larapanel.panel.layouts.sidebar')
         @endcomponent
         <main class="app-content">
             @yield('content')

@@ -16,6 +16,6 @@ class PanelController extends Controller
      */
     public function index()
     {
-        return view('larapanel::panel.panel');
+        return view('vendor.larapanel.panel.panel');
     }
 }

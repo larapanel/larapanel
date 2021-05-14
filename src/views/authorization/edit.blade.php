@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => $model ? ( ($type == 'permission') ? 'دسترسی‌ها، ویرایش' : 'نقش‌ها، ویرایش') : ( ($type == 'permission') ? 'دسترسی‌ها، ایجاد' : 'نقش‌ها، ایجاد')])
+@component('vendor.larapanel.panel.layouts.component', ['title' => $model ? ( ($type == 'permission') ? 'دسترسی‌ها، ویرایش' : 'نقش‌ها، ویرایش') : ( ($type == 'permission') ? 'دسترسی‌ها، ایجاد' : 'نقش‌ها، ایجاد')])
 
     @slot('style')
     @endslot
@@ -20,9 +20,9 @@
     @slot('content')
         <div class="row">
             <div class="col-md-12">
-                @component('larapanel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('larapanel::components.collapse-card', ['id' => 'permission_role_edit', 'show' => 'show', 'title' => ''])
+                        @component('vendor.larapanel.components.collapse-card', ['id' => 'permission_role_edit', 'show' => 'show', 'title' => ''])
                             @slot('body')
                                 <form method="POST"
                                       action="{{$model ? route("{$type}s.update", $model->id) : route("{$type}s.store")}}">

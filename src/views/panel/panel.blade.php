@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'پنل مدیریت'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'پنل مدیریت'])
 
     @slot('style')
         {{-- <style></style> --}}

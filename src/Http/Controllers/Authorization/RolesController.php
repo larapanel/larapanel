@@ -21,7 +21,7 @@ class RolesController
 
     public function index()
     {
-        return View::make('larapanel::authorization.roles.index', [
+        return View::make('vendor.larapanel.authorization.roles.index', [
             'roles' => $this->rolesModel::withCount('permissions')
                 ->simplePaginate(10),
         ]);
@@ -29,7 +29,7 @@ class RolesController
 
     public function create()
     {
-        return View::make('larapanel::authorization.edit', [
+        return View::make('vendor.larapanel.authorization.edit', [
             'model' => null,
             'permissions' => $this->permissionModel::all(['id', 'name']),
             'type' => 'role',
@@ -67,7 +67,7 @@ class RolesController
                 return $permission;
             });
 
-        return View::make('larapanel::authorization.edit', [
+        return View::make('vendor.larapanel.authorization.edit', [
             'model' => $role,
             'permissions' => $permissions,
             'type' => 'role',

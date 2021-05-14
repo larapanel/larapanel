@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'حساب‌کاربری'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'حساب‌کاربری'])
 
     @slot('style')
          <style>

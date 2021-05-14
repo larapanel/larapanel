@@ -33,7 +33,7 @@ class RolesAssignmentController
             ? $userModel::search($request->keyword)->paginate()
             : $userModel::query()->paginate();
 
-        return View::make('larapanel::authorization.roles-assignment.index', [
+        return View::make('vendor.larapanel.authorization.roles-assignment.index', [
             'models' => array_keys(Config::get('laratrust.user_models')),
             'modelKey' => 'users',
             'users' => $users,

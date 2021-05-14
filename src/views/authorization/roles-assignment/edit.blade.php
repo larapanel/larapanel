@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => "سطوح دسترسی، ویرایش"])
+@component('vendor.larapanel.panel.layouts.component', ['title' => "سطوح دسترسی، ویرایش"])
 
     @slot('style')
     @endslot
@@ -15,9 +15,9 @@
     @slot('content')
         <div class="row py-3">
             <div class="col-md-12">
-                @component('larapanel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('larapanel::components.collapse-card', ['id' => 'role_assignment_edit', 'show' => 'show', 'title' => ''])
+                        @component('vendor.larapanel.components.collapse-card', ['id' => 'role_assignment_edit', 'show' => 'show', 'title' => ''])
                             @slot('body')
                                 <form
                                     method="POST"

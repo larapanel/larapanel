@@ -1,4 +1,4 @@
-@component('larapanel::panel.layouts.component', ['title' => 'ویرایش کاربر'])
+@component('vendor.larapanel.panel.layouts.component', ['title' => 'ویرایش کاربر'])
 
     @slot('style')
     @endslot
@@ -21,9 +21,9 @@
     @slot('content')
         <div class="row">
             <div class="col-md-12">
-                @component('lazy-panel::components.accordion')
+                @component('vendor.larapanel.components.accordion')
                     @slot('cards')
-                        @component('lazy-panel::components.collapse-card', ['id' => 'user_edit', 'show' => 'show', 'title' => 'ویرایش کاربر'])
+                        @component('vendor.larapanel.components.collapse-card', ['id' => 'user_edit', 'show' => 'show', 'title' => 'ویرایش کاربر'])
                             @slot('body')
                                 <form method="POST"
                                       action="{{ route('users.update', $user) }}" enctype="multipart/form-data" autocomplete="off">
