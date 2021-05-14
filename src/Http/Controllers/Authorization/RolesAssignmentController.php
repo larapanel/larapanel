@@ -74,7 +74,7 @@ class RolesAssignmentController
         }
 
 
-        return View::make('lazy-panel::authorization.roles-assignment.edit', [
+        return View::make('vendor.larapanel.authorization.roles-assignment.edit', [
             'modelKey' => $modelKey,
             'roles' => $roles,
             'permissions' => $this->assignPermissions ? $permissions : null,

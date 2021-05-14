@@ -1,4 +1,4 @@
-@extends('home.layouts.app-auth')
+@extends('vendor.larapanel.panel.layouts.app-auth')
 
 @section('title')
     {{ $title }}
