@@ -106,13 +106,7 @@
                     },
                     buttonsStyling: false,
                     confirmButtonText: 'حذف',
-                    cancelButtonText: 'لغو',
-                    showClass: {
-                        popup: 'animated fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animated fadeOutUp'
-                    }
+                    cancelButtonText: 'لغو'
                 })
                     .then((result) => {
                         if (result.isConfirmed) {
@@ -128,13 +122,7 @@
                                         customClass: {
                                             confirmButton: 'btn btn-success',
                                         },
-                                        buttonsStyling: false,
-                                        showClass: {
-                                            popup: 'animated fadeInDown'
-                                        },
-                                        hideClass: {
-                                            popup: 'animated fadeOutUp'
-                                        }
+                                        buttonsStyling: false
                                     })
                                         .then((response) => {
                                             location.reload();
