@@ -31,11 +31,11 @@ class LarapanelServiceProvider extends ServiceProvider
          $this->mergeConfigFrom(__DIR__ . '/config/larapanel.php', 'larapanel');
          $this->publishes([
              __DIR__.'/config/larapanel.php' =>config_path('larapanel.php'),
-             __DIR__.'/views/auth/' => resource_path('views'),
-             __DIR__.'/views/authorization/' => resource_path('views/vendor/larapanel'),
-             __DIR__.'/views/components/' => resource_path('views/vendor/larapanel'),
-             __DIR__.'/views/panel/' => resource_path('views/vendor/larapanel'),
-             __DIR__.'/views/users/' => resource_path('views/vendor/larapanel'),
+             __DIR__.'/views/auth' => resource_path('views'),
+             __DIR__.'/views/authorization' => resource_path('views/vendor/larapanel'),
+             __DIR__.'/views/components' => resource_path('views/vendor/larapanel'),
+             __DIR__.'/views/panel' => resource_path('views/vendor/larapanel'),
+             __DIR__.'/views/users' => resource_path('views/vendor/larapanel'),
              __DIR__.'/assets/js/larapanel/' => resource_path('js/vendor/larapanel'),
              __DIR__.'/assets/js/plugins/tinymce/' => resource_path('js/vendor/larapanel/plugins/tinymce'),
              __DIR__.'/assets/sass/larapanel/' => resource_path('sass/vendor/larapanel'),
