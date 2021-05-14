@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('modules/css/larapanel.css') }}" rel="stylesheet">
+    <link href="{{ mix('modules/css/larapanel.css') }}" rel="stylesheet">
 
     @yield('style')
 
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('modules/js/larapanel.js') }}"></script>
+    <script src="{{ mix('modules/js/larapanel.js') }}"></script>
     <script>let baseUrl = "{{ URL::to('/') }}";</script>
     @yield('script')
 

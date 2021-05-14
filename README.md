@@ -35,20 +35,11 @@ After publishing new files, copy these two lines in your webpack.mix.js
 
 ```
 
-Please note that you can only have fonts in the following directory (because webpack will be confused in case if you use 2 directories for the fonts) :
+Please note that panel fonts will be published in the following directory :
 
 ```
 
-resources/sass/vendor/larapanel/fonts/
-
-```
-
-for example, if you want to use awesome-font and iransans-font in your home.scss (located in resources/sass/home/home.scss) you must import fonts using the following directories :
-
-```
-
-@import '../vendor/larapanel/fonts/awesome/awesome-font.css';
-@import '../vendor/larapanel/fonts/iransans/iransans-font.css';
+resources/fonts/
 
 ```
 

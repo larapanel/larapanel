@@ -14,31 +14,27 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ mix('css/home.css') }}" rel="stylesheet">
+    <link href="{{ mix('modules/css/larapanel.css') }}" rel="stylesheet">
     @yield('style')
-
 </head>
 
-<body>
+<body class="rtl">
+
     <div id="app">
-        @component('home.layouts.header')
-        @endcomponent
-        @yield('content_top')@yield('content')
-        @component('home.layouts.footer')
-        @endcomponent
+        <section class="material-half-bg">
+            <div class="cover"></div>
+        </section>
+        <div class="lockscreen-content">
+            <div class="lock-box">
+                @yield('content')
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
     <script>let baseUrl = "{{ URL::to('/') }}";</script>
-    <script src="{{ mix('js/home.js') }}"></script>
-
+    <script src="{{ mix('modules/js/larapanel.js') }}"></script>
     @yield('script')
-
-    <script>
-
-
-
-    </script>
 
 </body>
 </html>

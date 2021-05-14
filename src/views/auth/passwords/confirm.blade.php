@@ -1,4 +1,4 @@
-@component('home.layouts.component-auth', ['title' => 'تایید رمز عبور'])
+@component('vendor.larapanel.panel.layouts.component-auth', ['title' => 'تایید رمز عبور'])
 
     @slot('style')
     @endslot

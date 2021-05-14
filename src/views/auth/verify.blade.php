@@ -1,4 +1,4 @@
-@component('home.layouts.component-auth', ['title' => 'تایید حساب‌کاربری'])
+@component('vendor.larapanel.panel.layouts.component-auth', ['title' => 'تایید حساب‌کاربری'])
 
     @slot('style')
 
